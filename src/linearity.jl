@@ -49,4 +49,4 @@ expand_linear(x,s::Type{<:MultilinearSlotStructure}) = simplify(x,Prewalk(PassTh
 
 expand_linear(s::Type{<:MultilinearSlotStructure}) = (x -> expand_linear(x,s))
 
-export(expand_linear)
+export expand_linear 

@@ -109,4 +109,4 @@ expand_analytic(x, Ξ::APT, total_order::Int) = simplify(x,Prewalk(PassThrough(r
 expand_analytic(Ξ::APT, total_order::Int) = (x -> expand_analytic(x, Ξ, total_order))
 
 
-export(AnalyticOperator, expand_analytic, OperatorExpansion)
+export AnalyticOperator, expand_analytic, OperatorExpansion

@@ -32,4 +32,4 @@ function _toexpr(x::Term{NewTensor})
 	Expr(:latexifymerge, operation(x),b[1], intersperse(arguments(x))..., b[2])
 end
 
-export(variable, operator)
+export variable, operator

@@ -51,4 +51,4 @@ Slots(x::Term{NewTensor}) = getmetadata(operation(x),Type{Slots})
 number_of_slots(x::Term{NewTensor}) = number_of_slots(Slots(x))
 
 
-export(Slots,number_of_slots)
+export Slots, number_of_slots, TotalSymmetry, SymmetrySlotStructure, Multilinear, MultilinearSlotStructure

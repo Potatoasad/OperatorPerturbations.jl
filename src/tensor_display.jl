@@ -50,5 +50,4 @@ name(x::Term{NewTensor}) = TensorDisplay(x).name
 intersperse(a::Vector; token = ",") = [(i % 2) == 0 ? token : a[i÷2 + 1] for i ∈ 1:(2*length(a)-1)]
 
 
-export(TensorDisplay)
-export(NewTensor)
+export TensorDisplay, NewTensor

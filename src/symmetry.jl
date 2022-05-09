@@ -46,4 +46,4 @@ end
 r = @rule ~x::(z -> !already_partially_ordered(z)) => canonicalize_term(x)
 canonicalize(x) = simplify(x, Prewalk(PassThrough(r)))
 
-export(canonicalize)
+export canonicalize
