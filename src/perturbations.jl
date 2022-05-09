@@ -47,4 +47,4 @@ function seperate_orders(x::Union{Add,Mul,Pow}, ps::Union{APT,Vector{DataType},D
 end
 seperate_orders(ps::Union{APT,Vector{DataType},DataType}; divide=false) = (x->seperate_orders(x,ps;divide=divide))
 
-export seperate_orders
+export seperate_orders, APT, AbstractPerturbationParameters, PerturbationParameters, pert, pert_like
